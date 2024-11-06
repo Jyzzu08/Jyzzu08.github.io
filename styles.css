@@ -5,8 +5,8 @@ html {
 
 body {
     font-family: Arial, sans-serif; /* Fuente global */
-    margin: 0;
-    padding: 0;
+    margin: 0; /* Elimina el margen predeterminado del body */
+    padding: 0; /* Elimina el padding predeterminado del body */
     box-sizing: border-box; /* Asegura que el padding y border se incluyan en el tamaño total */
     background-color: #f4f4f4; /* Color de fondo claro */
     color: #2c3e50; /* Texto en azul oscuro para uniformidad */
@@ -17,16 +17,16 @@ nav {
     width: 100%; /* Ocupa todo el ancho */
     background-color: #2c3e50; /* Fondo oscuro */
     position: fixed; /* Fija el menú en la parte superior */
-    top: 0;
+    top: 0; /* Fija el menú en la parte superior de la pantalla */
     z-index: 1000; /* Asegura que el menú esté por encima de otros elementos */
     padding: 10px 0; /* Espaciado superior e inferior */
 }
 
 nav ul {
     list-style: none; /* Elimina el estilo de lista */
-    display: flex;
+    display: flex; /* Hace que los elementos se alineen en fila */
     justify-content: center; /* Centra los elementos del menú */
-    margin: 0;
+    margin: 0; /* Elimina el margen */
 }
 
 nav ul li {
@@ -37,7 +37,7 @@ nav ul li a {
     color: white; /* Color de texto blanco */
     text-decoration: none; /* Elimina el subrayado */
     font-size: 1.2rem; /* Tamaño de fuente */
-    font-weight: bold;
+    font-weight: bold; /* Negrita para el texto */
     transition: color 0.3s ease, transform 0.2s ease; /* Animación para color y escala */
 }
 
@@ -52,396 +52,396 @@ nav ul li a:active {
 
 /* Header con el banner */
 header {
-    display: flex;
-    flex-direction: column;
+    display: flex; /* Flexbox para centrar contenido */
+    flex-direction: column; /* Apila elementos en columna */
     align-items: center; /* Centra los elementos horizontalmente */
     justify-content: center; /* Centra los elementos verticalmente */
     background-color: #20c997; /* Fondo verde */
-    color: white;
+    color: white; /* Texto blanco */
     height: 100vh; /* Ocupa toda la altura de la ventana */
-    text-align: center;
+    text-align: center; /* Centra el texto */
     padding-top: 60px; /* Compensa el espacio del menú fijo */
 }
 
 .banner h1 {
-    font-size: 3rem;
-    font-weight: bold;
-    margin: 20px 0 10px 0;
+    font-size: 3rem; /* Tamaño del texto */
+    font-weight: bold; /* Negrita */
+    margin: 20px 0 10px 0; /* Espaciado superior e inferior */
 }
 
 .banner .logo {
     width: 200px; /* Tamaño del avatar */
-    height: 200px;
+    height: 200px; /* Altura del avatar */
     border-radius: 50%; /* Hace la imagen circular */
-    background-color: #2c3e50;
-    display: inline-block;
+    background-color: #2c3e50; /* Fondo oscuro */
+    display: inline-block; /* Para que se comporte como elemento en línea */
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra alrededor de la imagen */
-    margin-bottom: 20px;
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
 /* Títulos de las secciones */
 h2 {
     font-size: 2.5rem; /* Tamaño del título */
-    color: #2c3e50;
-    margin-bottom: 30px;
-    text-align: center;
-    padding-top: 20px;
+    color: #2c3e50; /* Color oscuro */
+    margin-bottom: 30px; /* Espaciado inferior */
+    text-align: center; /* Centra el título */
+    padding-top: 20px; /* Espaciado superior */
 }
 
 .banner .description {
-    font-size: 1.5rem;
-    color: #ffffff;
-    margin-top: 15px;
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: #ffffff; /* Color de texto blanco */
+    margin-top: 15px; /* Espaciado superior */
 }
 
 .banner .separator {
-    width: 300px;
-    height: 5px;
-    background-color: white;
-    margin: 20px auto;
-    position: relative;
+    width: 300px; /* Ancho de la línea */
+    height: 5px; /* Grosor de la línea */
+    background-color: white; /* Color de la línea */
+    margin: 20px auto; /* Centra el separador horizontalmente */
+    position: relative; /* Para posicionar el icono */
 }
 
 .banner .separator:before {
-    content: '★';
-    position: absolute;
-    top: -36px;
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 3rem;
-    color: #f1c40f;
+    content: '★'; /* Icono de estrella */
+    position: absolute; /* Posiciona el icono sobre la línea */
+    top: -36px; /* Posición vertical */
+    left: 50%; /* Centra el icono */
+    transform: translateX(-50%); /* Ajusta para centrado exacto */
+    font-size: 3rem; /* Tamaño del icono */
+    color: #f1c40f; /* Color amarillo */
 }
 
 /* Div de cookies */
 #cookies {
-    position: fixed;
+    position: fixed; /* Posición fija en pantalla */
     bottom: 0; /* Ubicado en la parte inferior */
-    width: 100%;
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 15px 20px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    width: 100%; /* Ancho completo */
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 15px 20px; /* Espaciado interno */
+    border-top-left-radius: 10px; /* Redondea esquinas */
+    border-top-right-radius: 10px; /* Redondea esquinas */
 }
 
 #cookies button {
-    background-color: #f1c40f;
-    color: black;
-    border: none;
-    padding: 10px 20px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-left: 10px;
-    transition: background-color 0.3s;
+    background-color: #f1c40f; /* Fondo amarillo */
+    color: black; /* Texto negro */
+    border: none; /* Sin borde */
+    padding: 10px 20px; /* Espaciado interno */
+    cursor: pointer; /* Cambia el cursor a mano */
+    border-radius: 5px; /* Bordes redondeados */
+    margin-left: 10px; /* Margen izquierdo */
+    transition: background-color 0.3s; /* Animación de cambio de color */
 }
 
 #cookies button:hover {
-    background-color: #e67e22;
+    background-color: #e67e22; /* Color naranja al pasar el ratón */
 }
 
 /* Sección 'Sobre mí' */
 #sobre-mi {
-    padding: 80px 20px;
-    background-color: #ffffff;
-    text-align: center;
-    color: #2c3e50;
+    padding: 80px 20px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center; /* Centra el texto */
+    color: #2c3e50; /* Color de texto oscuro */
 }
 
 .bio-card {
-    background-color: #fff;
-    padding: 30px;
-    border-radius: 15px;
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
-    max-width: 700px;
-    margin: 0 auto;
-    line-height: 1.8;
+    background-color: #fff; /* Fondo blanco */
+    padding: 30px; /* Espaciado interno */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    max-width: 700px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el card */
+    line-height: 1.8; /* Espaciado entre líneas */
 }
 
 .bio-card p {
-    font-size: 1.2rem;
-    line-height: 1.8;
-    color: #444;
-    text-align: justify;
-    margin-bottom: 1.5em;
+    font-size: 1.2rem; /* Tamaño del texto */
+    line-height: 1.8; /* Espaciado entre líneas */
+    color: #444; /* Color de texto gris */
+    text-align: justify; /* Justifica el texto */
+    margin-bottom: 1.5em; /* Espaciado inferior */
 }
 
 /* Iconos de redes sociales */
 .social-icons {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    margin-top: 30px; /* Espaciado superior */
+    display: flex; /* Flexbox para alineación */
+    justify-content: center; /* Centra los iconos */
+    gap: 20px; /* Espacio entre iconos */
 }
 
 .social-icons .icon {
-    font-size: 2.5rem;
-    color: #2c3e50;
-    transition: transform 0.3s ease, color 0.3s ease;
+    font-size: 2.5rem; /* Tamaño del icono */
+    color: #2c3e50; /* Color oscuro */
+    transition: transform 0.3s ease, color 0.3s ease; /* Animación de color y escala */
 }
 
 .social-icons .icon:hover {
-    color: #20c997;
-    transform: scale(1.2);
+    color: #20c997; /* Cambia a verde al pasar el ratón */
+    transform: scale(1.2); /* Aumenta ligeramente el tamaño */
 }
 
 /* Galería de proyectos */
 #proyectos h2 {
-    text-align: center;
+    text-align: center; /* Centra el título */
 }
 
 .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin-top: 20px;
+    display: flex; /* Flexbox para distribución de elementos */
+    flex-wrap: wrap; /* Permite que los elementos se envuelvan */
+    gap: 20px; /* Espacio entre proyectos */
+    justify-content: center; /* Centra los proyectos */
+    margin-top: 20px; /* Espaciado superior */
 }
 
 .project-item {
-    background-color: #ffffff;
-    color: #2c3e50;
-    border: 2px solid #20c997;
-    border-radius: 15px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    padding: 20px;
-    width: 300px;
-    height: 400px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    text-align: center;
-    opacity: 1;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.5s ease;
+    background-color: #ffffff; /* Fondo blanco */
+    color: #2c3e50; /* Color de texto oscuro */
+    border: 2px solid #20c997; /* Borde verde */
+    border-radius: 15px; /* Bordes redondeados */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra suave */
+    padding: 20px; /* Espaciado interno */
+    width: 300px; /* Ancho del proyecto */
+    height: 400px; /* Altura del proyecto */
+    display: flex; /* Flexbox para distribución interna */
+    flex-direction: column; /* Elementos en columna */
+    justify-content: space-between; /* Espaciado entre elementos */
+    text-align: center; /* Centra el texto */
+    opacity: 1; /* Opacidad completa */
+    transform: translateY(20px); /* Inicia desplazado */
+    transition: opacity 0.5s ease, transform 0.5s ease; /* Animación de transición */
 }
 
 .project-item:hover {
-    transform: scale(1.05);
-    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-    border-color: #f1c40f;
-    opacity: 1;
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Sombra más intensa */
+    border-color: #f1c40f; /* Cambia el color del borde */
+    opacity: 1; /* Opacidad completa */
 }
 
 .project-item img {
-    height: 150px;
-    width: auto;
-    margin-bottom: 15px;
-    border-radius: 10px;
+    height: 150px; /* Altura de la imagen */
+    width: auto; /* Ancho ajustado automáticamente */
+    margin-bottom: 15px; /* Espaciado inferior */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .project-item h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
 .project-item p {
-    font-size: 1rem;
-    color: #333;
-    height: 80px;
-    overflow: hidden;
-    text-overflow: ellipsis;
-    margin-bottom: 15px;
+    font-size: 1rem; /* Tamaño del texto */
+    color: #333; /* Color gris oscuro */
+    height: 80px; /* Altura máxima del texto */
+    overflow: hidden; /* Oculta texto que exceda el límite */
+    text-overflow: ellipsis; /* Añade "..." al final del texto */
+    margin-bottom: 15px; /* Espaciado inferior */
 }
 
 .project-link {
-    color: #3498db;
-    margin-top: auto;
-    transition: color 0.3s;
+    color: #3498db; /* Color azul */
+    margin-top: auto; /* Mueve el enlace al fondo */
+    transition: color 0.3s; /* Animación de color */
 }
 
 .project-link:hover {
-    color: #20c997;
+    color: #20c997; /* Cambia a verde al pasar el ratón */
 }
 
 /* Sección de habilidades */
 #habilidades {
-    padding: 70px;
-    background-color: #f4f4f4;
-    text-align: center;
+    padding: 70px; /* Espaciado interno */
+    background-color: #f4f4f4; /* Fondo claro */
+    text-align: center; /* Centra el texto */
 }
 
 .skills-container {
-    max-width: 800px;
-    margin: 0 auto;
+    max-width: 800px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el contenedor */
 }
 
 .skill {
-    margin-bottom: 30px;
+    margin-bottom: 30px; /* Espaciado inferior */
 }
 
 .skill h3 {
-    font-size: 1.5rem;
-    margin-bottom: 10px;
+    font-size: 1.5rem; /* Tamaño del título */
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
 .skill p {
-    font-size: 1rem;
-    color: #333;
-    margin-bottom: 10px;
+    font-size: 1rem; /* Tamaño del texto */
+    color: #333; /* Color gris oscuro */
+    margin-bottom: 10px; /* Espaciado inferior */
 }
 
 /* Barras de progreso */
 .progress-bar {
-    width: 100%;
-    background-color: #ddd;
-    border-radius: 20px;
-    overflow: hidden;
-    margin: 0 auto;
-    height: 20px;
+    width: 100%; /* Ancho completo */
+    background-color: #ddd; /* Fondo gris claro */
+    border-radius: 20px; /* Bordes redondeados */
+    overflow: hidden; /* Oculta contenido que exceda el borde */
+    margin: 0 auto; /* Centra la barra */
+    height: 20px; /* Altura de la barra */
 }
 
 .progress {
-    height: 100%;
-    border-radius: 20px;
-    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3);
+    height: 100%; /* Ocupa toda la altura de la barra */
+    border-radius: 20px; /* Bordes redondeados */
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.3); /* Sombra interna */
 }
 
 /* Colores de las barras de progreso */
 .html {
-    width: 90%;
-    background-color: #1d81c3;
+    width: 90%; /* Ancho específico para HTML */
+    background-color: #1d81c3; /* Color azul */
 }
 
 .css {
-    width: 80%;
-    background-color: #9d0d0d;
+    width: 80%; /* Ancho específico para CSS */
+    background-color: #9d0d0d; /* Color rojo */
 }
 
 .js {
-    width: 70%;
-    background-color: #dfb408;
+    width: 70%; /* Ancho específico para JavaScript */
+    background-color: #dfb408; /* Color amarillo */
 }
 
 .sistemas {
-    width: 75%;
-    background-color: #34495e;
+    width: 75%; /* Ancho específico para sistemas */
+    background-color: #34495e; /* Color gris oscuro */
 }
 
 .seguridad {
-    width: 85%;
-    background-color: #16a085;
+    width: 85%; /* Ancho específico para seguridad */
+    background-color: #16a085; /* Color verde */
 }
 
 /* Sección de contacto */
 #contacto {
-    padding: 70px;
-    background-color: #ffffff;
-    text-align: center;
-    color: #2c3e50;
+    padding: 70px; /* Espaciado interno */
+    background-color: #ffffff; /* Fondo blanco */
+    text-align: center; /* Centra el texto */
+    color: #2c3e50; /* Color oscuro */
 }
 
 #contacto p {
-    font-size: 1.2rem;
-    margin-bottom: 20px;
+    font-size: 1.2rem; /* Tamaño del texto */
+    margin-bottom: 20px; /* Espaciado inferior */
 }
 
 form {
-    max-width: 600px;
-    margin: 0 auto;
-    text-align: left;
+    max-width: 600px; /* Ancho máximo */
+    margin: 0 auto; /* Centra el formulario */
+    text-align: left; /* Alinea el texto a la izquierda */
 }
 
 .form-group {
-    margin-bottom: 15px;
+    margin-bottom: 15px; /* Espaciado inferior */
 }
 
 label {
-    display: block;
-    font-weight: bold;
-    margin-bottom: 5px;
+    display: block; /* Cada etiqueta ocupa toda la línea */
+    font-weight: bold; /* Negrita */
+    margin-bottom: 5px; /* Espaciado inferior */
 }
 
 input[type="text"],
 input[type="email"],
 textarea {
-    width: 100%;
-    padding: 10px;
-    background-color: #f9f9f9;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 1rem;
-    color: #2c3e50;
-    transition: border-color 0.3s ease, background-color 0.3s ease;
+    width: 100%; /* Ancho completo */
+    padding: 10px; /* Espaciado interno */
+    background-color: #f9f9f9; /* Fondo gris claro */
+    border: 1px solid #ccc; /* Borde gris */
+    border-radius: 5px; /* Bordes redondeados */
+    font-size: 1rem; /* Tamaño del texto */
+    color: #2c3e50; /* Color de texto */
+    transition: border-color 0.3s ease, background-color 0.3s ease; /* Animación para color de borde y fondo */
 }
 
 input[type="text"]:focus,
 input[type="email"]:focus,
 textarea:focus {
-    border-color: #3498db;
-    background-color: #eef9ff;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-color: #3498db; /* Borde azul al enfocar */
+    background-color: #eef9ff; /* Fondo claro al enfocar */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra al enfocar */
 }
 
 /* Botón de envío */
 .btn-submit {
-    background-color: #20c997;
-    color: white;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    font-size: 1rem;
-    transition: background-color 0.3s, transform 0.3s;
+    background-color: #20c997; /* Fondo verde */
+    color: white; /* Texto blanco */
+    padding: 10px 20px; /* Espaciado interno */
+    border: none; /* Sin borde */
+    border-radius: 5px; /* Bordes redondeados */
+    cursor: pointer; /* Cambia el cursor a mano */
+    font-size: 1rem; /* Tamaño del texto */
+    transition: background-color 0.3s, transform 0.3s; /* Animación de color y escala */
 }
 
 .btn-submit:hover {
-    background-color: #17a589;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    transform: scale(1.05);
+    background-color: #17a589; /* Cambia el fondo a verde oscuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra al pasar el ratón */
+    transform: scale(1.05); /* Aumenta ligeramente el tamaño */
 }
 
 .btn-submit:active {
-    transform: scale(1);
+    transform: scale(1); /* Restaura el tamaño al hacer clic */
 }
 
 /* Footer */
 footer {
-    background-color: #2c3e50;
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-    position: relative;
-    bottom: 0;
-    width: 100%;
-    transition: color 0.3s ease;
+    background-color: #2c3e50; /* Fondo oscuro */
+    color: white; /* Texto blanco */
+    text-align: center; /* Centra el texto */
+    padding: 10px 0; /* Espaciado interno */
+    position: relative; /* Posiciona el footer en la parte inferior */
+    bottom: 0; /* Fija en la parte inferior de la pantalla */
+    width: 100%; /* Ancho completo */
+    transition: color 0.3s ease; /* Animación para color */
 }
 
 footer p {
-    margin: 0;
-    font-size: 0.9rem;
+    margin: 0; /* Elimina el margen */
+    font-size: 0.9rem; /* Tamaño del texto */
 }
 
 footer p:hover {
-    color: #f1c40f;
+    color: #f1c40f; /* Cambia el color a amarillo al pasar el ratón */
 }
 
 /* Diseño responsivo para móviles */
 @media (max-width: 768px) {
     h1 {
-        font-size: 2.5rem;
+        font-size: 2.5rem; /* Tamaño más pequeño para el título */
     }
 
     .logo {
-        width: 80px;
+        width: 80px; /* Tamaño más pequeño para el logo */
     }
 
     nav ul {
-        flex-direction: column;
-        padding: 0;
+        flex-direction: column; /* Cambia la dirección del menú a columna */
+        padding: 0; /* Elimina el padding */
     }
 
     nav ul li {
-        margin: 10px 0;
+        margin: 10px 0; /* Espaciado entre elementos del menú */
     }
 
     .project-grid {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: column; /* Cambia la disposición de la galería a columna */
+        gap: 15px; /* Reduce el espacio entre proyectos */
     }
 
     .project-item {
-        width: 100%;
-        height: auto;
+        width: 100%; /* Ancho completo */
+        height: auto; /* Altura automática */
     }
 }
