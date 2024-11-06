@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <!-- Especifica la codificación de caracteres de la página en UTF-8 -->
+    <meta charset="UTF-8">
+    <!-- Configuración para que la página sea responsive en dispositivos móviles -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Título que se muestra en la pestaña del navegador -->
+    <title>Portafolio de Jesús Manzanero</title>
+    <!-- Descripción para motores de búsqueda -->
+    <meta name="description" content="Portafolio de Jesús Manzanero, desarrollador web especializado en HTML, CSS y JavaScript con interés en IA.">
+    <!-- Palabras clave para mejorar el SEO de la página -->
+    <meta name="keywords" content="portafolio, desarrollo web, HTML, CSS, JavaScript, inteligencia artificial">
+    
+    <!-- Enlace a la hoja de estilos externa -->
+    <link rel="stylesheet" href="styles.css">
+    <!-- Icono de la página (favicon) que se muestra en la pestaña del navegador -->
+    <link rel="icon" href="Favicon JDM.png" type="image/png">
+    <!-- Enlace a la biblioteca de iconos de Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    
+    <style>
+        /* Estilo para aplicar un desplazamiento suave al hacer clic en los enlaces */
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+</head>
+<body>
+    <!-- Menú de navegación fijo en la parte superior de la página -->
+    <nav aria-label="Menú de navegación principal">
+        <ul>
+            <!-- Enlaces de navegación que llevan a diferentes secciones de la página -->
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#sobre-mi">Sobre mí</a></li>
+            <li><a href="#proyectos">Proyectos</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- Sección de encabezado con el banner de presentación -->
+    <header id="inicio">
+        <div class="banner">
+            <!-- Nombre del propietario del portafolio -->
+            <h1>Jesús David Manzanero Martí</h1>
+            <!-- Imagen de avatar -->
+            <img src="Avatar JM.png" alt="Avatar de Jesús Manzanero" class="logo">
+            <!-- Separador visual -->
+            <div class="separator"></div>
+            <!-- Descripción breve del perfil profesional -->
+            <p class="description">Administrador de Sistemas Informáticos - Desarrollador Web</p>
+        </div>
+    </header>
+
+    <!-- Div de notificación de cookies con botón de aceptación -->
+    <div id="cookies">
+        <!-- Mensaje sobre el uso de cookies en el sitio -->
+        Este sitio usa cookies para mejorar tu experiencia. 
+        <!-- Botón para aceptar las cookies y ocultar el mensaje -->
+        <button onclick="ocultarCookies()" aria-label="Aceptar cookies">Aceptar</button>
+    </div>
+
+    <!-- Sección sobre mí con información personal y profesional -->
+    <section id="sobre-mi">
+        <h2>Sobre mí</h2>
+        <div class="bio-card">
+            <!-- Texto que describe la trayectoria y experiencia profesional -->
+            <p>
+                ¡Hola! Soy Jesús Manzanero, un apasionado de los sistemas informáticos y el desarrollo web.
+            </p>
+            <p>
+                He estudiado Administración de Sistemas Informáticos en Red, donde he adquirido una sólida base en redes, ciberseguridad y gestión de servidores. A lo largo de mi formación, he trabajado en diversos proyectos que me han permitido poner en práctica mis conocimientos en configuración de redes, manejo de servidores en entornos Windows y Linux, y desarrollo de soluciones para entornos empresariales.
+            </p>
+            <p>
+                En el área de desarrollo web, tengo experiencia en HTML, CSS y JavaScript, con un enfoque en crear sitios y aplicaciones que sean tanto funcionales como visualmente atractivas. He desarrollado un portafolio de proyectos en GitHub, donde destaco algunos de mis trabajos en diseño web y configuraciones de sistemas.
+            </p>
+            <p>
+                Además, me esfuerzo por mantenerme al día con las mejores prácticas en seguridad y eficiencia, aspectos fundamentales para garantizar una infraestructura robusta. Mi objetivo es especializarme en ciberseguridad y redes, y aportar valor en proyectos que requieran conocimientos técnicos y un enfoque en la seguridad de la información.
+            </p>
+        </div>
+        <!-- Iconos de redes sociales para conectar con el propietario del portafolio -->
+        <div class="social-icons">
+            <!-- Enlace a LinkedIn -->
+            <a href="https://es.linkedin.com/in/jes%C3%BAs-david-manzanero-marti-995010232" class="icon linkedin" target="_blank" aria-label="LinkedIn">
+                <i class="fab fa-linkedin"></i>
+            </a>
+            <!-- Enlace a GitHub -->
+            <a href="https://github.com/Jyzzu08" class="icon github" target="_blank" aria-label="GitHub">
+                <i class="fab fa-github"></i>
+            </a>
+            <!-- Enlace a Twitter -->
+            <a href="https://x.com/jyzzu08" class="icon twitter" target="_blank" aria-label="Twitter">
+                <i class="fab fa-twitter"></i>
+            </a>
+        </div>
+    </section>
+
+    <!-- Sección de proyectos con una lista de proyectos destacados -->
+    <section id="proyectos">
+        <h2>Proyectos</h2>
+        <div class="project-grid">
+            <!-- Proyecto individual con imagen, título y descripción -->
+            <div class="project-item">
+                <img src="Proyecto 1.jpg" alt="Captura de implementación de un servidor web">
+                <h3>Implementación de un Servidor Web</h3>
+                <p>Configuración de dominios virtuales, ajuste de permisos, implementación de medidas de seguridad.</p>
+                <a href="https://github.com/Jyzzu08" target="_blank" class="project-link">Ver en GitHub</a>
+            </div>
+            <!-- Más proyectos con estructura similar al anterior -->
+            <div class="project-item">
+                <img src="proyecto 2.png" alt="Captura de configuración de un servidor de correo">
+                <h3>Configuración de un Servidor de Correo</h3>
+                <p>Habilitación de SMTP para el envío de correos, IMAP/POP3 para que los usuarios reciban y gestionen sus mensajes, encriptación (SSL/TLS).</p>
+                <a href="https://github.com/Jyzzu08" target="_blank" class="project-link">Ver en GitHub</a>
+            </div>
+            <div class="project-item">
+                <img src="proyecto 3.jpg" alt="Captura de implementación de servidores DNS y DHCP">
+                <h3>Implementación de Servidores DNS y DHCP</h3>
+                <p>Configuración de servidores DNS y DHCP para gestionar el tráfico y simplificar el acceso a recursos en una red.</p>
+                <a href="https://github.com/Jyzzu08" target="_blank" class="project-link">Ver en GitHub</a>
+            </div>
+            <div class="project-item">
+                <img src="proyecto 4.png" alt="Captura de administración de Active Directory">
+                <h3>Configuración y Administración de Active Directory</h3>
+                <p>Centralización, autenticación y autorización de políticas de seguridad en redes de empresas y organizaciones.</p>
+                <a href="https://github.com/Jyzzu08" target="_blank" class="project-link">Ver en GitHub</a>
+            </div>
+            <div class="project-item">
+                <img src="proyecto 5.jpeg" alt="Captura del sistema de autenticación de usuarios">
+                <h3>Sistema de Autenticación de Usuarios</h3>
+                <p>Generación de contenido dinámico, procesamiento de formularios, gestión de sesiones y cookies.</p>
+                <a href="https://github.com/Jyzzu08" target="_blank" class="project-link">Ver en GitHub</a>
+            </div>
+            <div class="project-item">
+                <img src="Proyecto 6.png" alt="Captura de aplicación de gestión de usuarios en la nube">
+                <h3>Aplicación de Gestión de Usuarios con Base de Datos en la Nube</h3>
+                <p>Registro y autenticación de usuarios, almacenamiento seguro y escalabilidad.</p>
+                <a href="https://github.com/Jyzzu08" target="_blank" class="project-link">Ver en GitHub</a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de habilidades con lista de conocimientos y barras de progreso -->
+    <section id="habilidades">
+        <h2>Habilidades y Conocimientos</h2>
+        <div class="skills-container">
+            <!-- Habilidad específica con icono y barra de progreso -->
+            <div class="skill">
+                <h3><i class="fab fa-html5"></i> HTML</h3>
+                <p>Lenguaje de marcado para la creación de páginas web.</p>
+                <div class="progress-bar">
+                    <div class="progress html"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3><i class="fab fa-css3-alt"></i> CSS</h3>
+                <p>Lenguaje de estilo para diseñar páginas web de forma atractiva.</p>
+                <div class="progress-bar">
+                    <div class="progress css"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3><i class="fab fa-js-square"></i> JavaScript</h3>
+                <p>Lenguaje de programación para hacer las páginas web interactivas.</p>
+                <div class="progress-bar">
+                    <div class="progress js"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3><i class="fas fa-cogs"></i> Implementación de Sistemas Linux (Ubuntu) y Windows (Azure)</h3>
+                <p>Configuración y administración de sistemas y servidores en entornos de red.</p>
+                <div class="progress-bar">
+                    <div class="progress sistemas"></div>
+                </div>
+            </div>
+            <div class="skill">
+                <h3><i class="fas fa-lock"></i> Protocolos de Seguridad DNS DHCP y Encriptación SSL</h3>
+                <p>Conocimientos en protocolos de seguridad y encriptación para proteger redes y datos sensibles.</p>
+                <div class="progress-bar">
+                    <div class="progress seguridad"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <!-- Sección de contacto con formulario -->
+    <section id="contacto">
+        <h2>Contacto</h2>
+        <p>¿Quieres contratarme? ¡Hablemos!</p>
+        <form id="contact-form" action="https://formspree.io/f/xldebrzb" method="POST">
+            <!-- Campo de entrada para el nombre del usuario -->
+            <div class="form-group">
+                <label for="name">Nombre</label>
+                <input type="text" id="name" name="name" required placeholder="Tu nombre" autocomplete="off">
+            </div>
+            <!-- Campo de entrada para el correo electrónico del usuario -->
+            <div class="form-group">
+                <label for="email">Correo Electrónico</label>
+                <input type="email" id="email" name="email" required placeholder="Tu correo electrónico" autocomplete="off">
+            </div>
+            <!-- Área de texto para que el usuario escriba su mensaje -->
+            <div class="form-group">
+                <label for="message">Mensaje</label>
+                <textarea id="message" name="message" rows="5" required placeholder="Tu mensaje"></textarea>
+            </div>
+            <!-- Botón para enviar el formulario -->
+            <button type="submit" class="btn-submit">Enviar</button>
+        </form>
+    </section>
+
+    <!-- Pie de página con la línea de copyright -->
+    <footer>
+        <p>© 2024 Jesús Manzanero</p>
+    </footer>
+    
+    <!-- Script para ocultar el div de cookies y guardar la preferencia del usuario -->
+    <script>
+        function ocultarCookies() {
+            document.getElementById('cookies').style.display = 'none';
+            localStorage.setItem('cookiesAccepted', 'true');
+        }
+
+        if (!localStorage.getItem('cookiesAccepted')) {
+            document.getElementById('cookies').style.display = 'block';
+        }
+    </script>
+
+    <!-- Script para el desplazamiento suave en el menú de navegación -->
+    <script>
+        document.querySelectorAll('nav a').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                const targetId = this.getAttribute('href');
+                document.querySelector(targetId).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
+</body>
+</html>
